@@ -19,6 +19,6 @@ manager.add_command('shell', Shell(make_context=make_shell_context))
 def index():
     return 'hello, world!'
 
-
+from app import app as application
 if __name__ == '__main__':
     manager.run()
